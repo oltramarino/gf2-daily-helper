@@ -1,8 +1,5 @@
-// github actions entrypoint
-
 import crypto from 'node:crypto';
 import { loginPayload, DailyTask } from './service.js';
-import { serverChan } from './serverChan.js'; // 假设 serverChan 函数在 serverChan.js 中
 
 async function handler(event: Event) {
     const userPayload: loginPayload = {
