@@ -1,5 +1,5 @@
 import crypto from 'node:crypto';
-import { loginPayload, DailyTask } from './service.js';
+import { loginPayload, DailyTask, serverChan } from './service.js';
 
 async function handler(event: Event) {
     const userPayload: loginPayload = {
