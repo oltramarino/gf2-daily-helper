@@ -1,4 +1,4 @@
-#在github action中加入了Qmsg酱推送，key设置为SERVERCHAN_SENDKEY
+# 在github-action中加入了Qmsg酱推送（key设置为SERVERCHAN_SENDKEY）
 
 # gf2-daily-helper
 Girls' Frontline 2 Exilium Official Community Check-in Helper
