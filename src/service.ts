@@ -250,6 +250,7 @@ export async function DailyTask(userPayload: loginPayload): Promise<void> {
     }
 }
 
+// serverChan 函数定义
 export async function serverChan(sendkey: string, title: string, content: string): Promise<number> {
   if (typeof sendkey !== 'string') {
     console.error('Wrong type for serverChan token.');
@@ -273,9 +274,7 @@ export async function serverChan(sendkey: string, title: string, content: string
       },
     );
 
-    const data = await resp.json();
-
-    // 根据接口响应判断是否成功
+    const data = await resp.json() as { success: boolean; reason: string }; // 类型断言
     if (data.success) {
       console.log('[ServerChan] Send message to ServerChan successfully.');
       return 0;
