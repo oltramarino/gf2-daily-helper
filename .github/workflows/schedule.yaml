@@ -32,6 +32,7 @@ jobs:
         env:
           ACCOUNT_NAME: ${{ secrets.ACCOUNT_NAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
+          SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
 
       - name: Keep alive
         uses: gautamkrishnar/keepalive-workflow@v2
